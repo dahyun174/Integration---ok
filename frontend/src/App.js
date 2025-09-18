@@ -19,8 +19,7 @@ function App(){
  setItems([...items, item]);
  console.log("items: ", items);
  call("/todo","POST", item)
- .then((response) => setItems(response.data)); //?결과확인해야함 response
-타입
+ .then((response) => setItems(response.data)); //?결과확인해야함 response 타입
  };
  let todoItems =
  items.length > 0 && (
